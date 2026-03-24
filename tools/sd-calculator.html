@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Standard Deviation Calculator</title>
+
+<link rel="stylesheet" href="../styles.css">
+
+<style>
+
+.container{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+font-size:16px;
+}
+
+button{
+padding:10px 20px;
+background:#003366;
+color:white;
+border:none;
+cursor:pointer;
+font-size:16px;
+}
+
+.result{
+margin-top:20px;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Standard Deviation Calculator</h1>
+
+<p>Enter numbers separated by commas:</p>
+
+<input id="numbers" placeholder="Example: 10,20,30,40">
+
+<button onclick="calculate()">Calculate</button>
+
+<div class="result" id="output"></div>
+
+</div>
+
+<script>
+
+function calculate(){
+
+let input=document.getElementById("numbers").value;
+
+let arr=input.split(",").map(Number);
+
+let n=arr.length;
+
+let sum=0;
+
+for(let i=0;i<n;i++){
+sum+=arr[i];
+}
+
+let mean=sum/n;
+
+let variance=0;
+
+for(let i=0;i<n;i++){
+variance+=Math.pow(arr[i]-mean,2);
+}
+
+variance=variance/n;
+
+let sd=Math.sqrt(variance);
+
+document.getElementById("output").innerHTML=
+
+"Mean: "+mean.toFixed(3)+"<br>"+
+"Variance: "+variance.toFixed(3)+"<br>"+
+"Standard Deviation: "+sd.toFixed(3);
+
+}
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Chapter 5 - Frequency Distributions</title>
+
+<style>
+
+body{
+font-family: Arial, Helvetica, sans-serif;
+margin:0;
+background:#f5f7fb;
+line-height:1.6;
+}
+
+header{
+background:#002b5c;
+color:white;
+padding:20px;
+}
+
+header h1{
+margin:0;
+}
+
+.container{
+display:flex;
+}
+
+.sidebar{
+width:260px;
+background:white;
+padding:20px;
+border-right:1px solid #ddd;
+height:100vh;
+overflow:auto;
+}
+
+.sidebar h3{
+color:#002b5c;
+}
+
+.sidebar ul{
+list-style:none;
+padding:0;
+}
+
+.sidebar li{
+margin:10px 0;
+}
+
+.sidebar a{
+text-decoration:none;
+color:#003366;
+}
+
+.content{
+flex:1;
+padding:40px;
+}
+
+h2{
+color:#002b5c;
+margin-top:30px;
+}
+
+h3{
+color:#003366;
+}
+
+table{
+border-collapse:collapse;
+width:100%;
+margin:20px 0;
+}
+
+table, th, td{
+border:1px solid #ccc;
+}
+
+th, td{
+padding:10px;
+text-align:left;
+}
+
+.highlight{
+background:#eef5ff;
+padding:15px;
+border-left:5px solid #003366;
+margin:20px 0;
+}
+
+footer{
+text-align:center;
+padding:20px;
+background:#002b5c;
+color:white;
+margin-top:40px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<h1>Statistics Digital Textbook</h1>
+<p>Chapter 5: Frequency Distributions</p>
+</header>
+
+<div class="container">
+
+<nav class="sidebar">
+
+<h3>Chapter Contents</h3>
+
+<ul>
+
+<li><a href="#intro">5.1 Introduction</a></li>
+<li><a href="#meaning">5.2 Types of Frequency Distributions</a></li>
+<li><a href="#definitions">5.3 Construction of Frequency Distributions</a></li>
+
+</ul>
+
+</nav>
+
+<main class="content">
+
+<section id="intro">
+
+
+<h2>5.1 Introduction</h2>
+
+<p>
+Frequency is the number of times a given value of an observation or event occurs in a dataset.
+A frequency distribution is a table that groups data into different classes and shows the number
+of observations that fall into each class.
+</p>
+
+<p>
+It is a comprehensive method to organize raw data for both qualitative and quantitative variables.
+The table contains categories of data in one column and corresponding frequencies in another column.
+</p>
+
+---
+
+<h2>5.2 Types of Frequency Distribution</h2>
+
+<h3>1. Simple Frequency Distribution</h3>
+
+<h3>a) Raw Series / Individual Series</h3>
+
+<p>
+Raw data are observations recorded in their original form without organization.
+Each observation occurs with frequency one.
+</p>
+
+<div class="example">
+
+<b>Example:</b><br>
+
+Marks of students:<br>
+
+55, 73, 60, 41, 60, 61, 75, 73, 58, 80
+
+</div>
+
+---
+
+<h3>b) Discrete Frequency Distribution</h3>
+
+<p>
+In discrete data, values are exact and distinct.
+The frequency of each value is counted using tally marks.
+</p>
+
+<table>
+
+<tr>
+<th>Children (x)</th>
+<th>Tally</th>
+<th>Frequency (f)</th>
+</tr>
+
+<tr><td>0</td><td>|</td><td>1</td></tr>
+<tr><td>1</td><td>|||</td><td>3</td></tr>
+<tr><td>2</td><td>|||||</td><td>5</td></tr>
+<tr><td>3</td><td>|||</td><td>3</td></tr>
+<tr><td>4</td><td>||</td><td>2</td></tr>
+<tr><td>5</td><td>|</td><td>1</td></tr>
+
+<tr>
+<th colspan="2">Total</th>
+<th>15</th>
+</tr>
+
+</table>
+
+---
+
+<h3>c) Continuous Frequency Distribution</h3>
+
+<p>
+When the data range is large or measured continuously,
+values are grouped into class intervals.
+</p>
+
+<table>
+
+<tr>
+<th>Class Interval</th>
+<th>Tally</th>
+<th>Frequency</th>
+</tr>
+
+<tr><td>0 – 25</td><td>||</td><td>2</td></tr>
+<tr><td>25 – 50</td><td>|||</td><td>3</td></tr>
+<tr><td>50 – 75</td><td>||||||</td><td>7</td></tr>
+<tr><td>75 – 100</td><td>|||</td><td>3</td></tr>
+
+<tr>
+<th colspan="2">Total</th>
+<th>15</th>
+</tr>
+
+</table>
+
+---
+
+<h2>Types of Continuous Class Intervals</h2>
+
+<h3>1. Exclusive Method</h3>
+
+<p>
+In this method, the upper limit of one class becomes the lower limit of the next class.
+The upper limit is excluded from the class.
+</p>
+
+Example: 0–25, 25–50, 50–75, 75–100
+
+---
+
+<h3>2. Inclusive Method</h3>
+
+<p>
+In this method both upper and lower limits belong to the same class.
+</p>
+
+Example:
+
+0–25  
+26–50  
+51–75  
+76–100  
+
+---
+
+<h3>3. Open-End Classes</h3>
+
+<p>
+Open-end classes do not specify the lower limit of the first class or
+upper limit of the last class.
+</p>
+
+Example:
+
+- Below 20  
+- 20–40  
+- 40–60  
+- 60–80  
+- Above 80  
+
+---
+
+<h2>Difference Between Exclusive and Inclusive Methods</h2>
+
+<table>
+
+<tr>
+<th>Exclusive Method</th>
+<th>Inclusive Method</th>
+</tr>
+
+<tr>
+<td>Upper limit excluded</td>
+<td>Upper and lower limits included</td>
+</tr>
+
+<tr>
+<td>Used for continuous data</td>
+<td>Used for discrete integer data</td>
+</tr>
+
+<tr>
+<td>No gaps between classes</td>
+<td>Gaps between class limits</td>
+</tr>
+
+</table>
+
+---
+
+<h2>2. Relative Frequency Distribution</h2>
+
+<p>
+Relative frequency is the proportion of observations in a class
+compared with total observations.
+</p>
+
+<div class="formula">
+Relative Frequency = Class Frequency / Total Frequency
+</div>
+
+Example:
+
+2 / 15 = 0.133
+
+---
+
+<h2>3. Percentage Frequency Distribution</h2>
+
+<p>
+Percentage frequency converts relative frequency into percentages.
+</p>
+
+<div class="formula">
+Percentage Frequency = Relative Frequency × 100
+</div>
+
+Example:
+
+2 / 15 × 100 = 13.33%
+
+---
+
+<h2>4. Cumulative Frequency Distribution</h2>
+
+<p>
+Cumulative frequency is the running total of frequencies.
+</p>
+
+<table>
+
+<tr>
+<th>Class Interval</th>
+<th>Frequency</th>
+<th>Cumulative Frequency</th>
+</tr>
+
+<tr><td>0–25</td><td>2</td><td>2</td></tr>
+<tr><td>25–50</td><td>3</td><td>5</td></tr>
+<tr><td>50–75</td><td>7</td><td>12</td></tr>
+<tr><td>75–100</td><td>3</td><td>15</td></tr>
+
+</table>
+
+---
+
+<h2>5. Cumulative Percentage Frequency</h2>
+
+<p>
+Cumulative percentage is obtained by adding percentage frequencies
+successively.
+</p>
+
+Example:
+
+13.33 → 33.33 → 79.99 → 100%
+
+---
+
+<h2>6. Univariate Frequency Distribution</h2>
+
+<p>
+Frequency distributions involving only one variable
+are called univariate frequency distributions.
+</p>
+
+---
+
+<h2>7. Bivariate and Multivariate Frequency Distribution</h2>
+
+<p>
+If data involve two variables simultaneously,
+it is called a <b>bivariate distribution</b>.
+</p>
+
+<p>
+If data involve more than two variables,
+it is called a <b>multivariate distribution</b>.
+</p>
+
+---
+
+<h2>5.3 Construction of Frequency Distribution</h2>
+
+<h3>Discrete Distribution</h3>
+
+Steps:
+
+<ul>
+
+<li>List all values of the variable.</li>
+
+<li>Use tally marks to count occurrences.</li>
+
+<li>Convert tally marks to frequencies.</li>
+
+</ul>
+
+---
+
+<h3>Continuous Distribution</h3>
+
+<h3>Important Terms</h3>
+
+<ul>
+
+<li><b>Class Interval:</b> Range of values (50–75)</li>
+
+<li><b>Class Limits:</b> Lower (L) and Upper (U)</li>
+
+<li><b>Range:</b> Largest value − Smallest value</li>
+
+<li><b>Midpoint:</b> (L + U) / 2</li>
+
+<li><b>Frequency:</b> Number of observations in class</li>
+
+</ul>
+
+<div class="formula">
+Range = Largest Value − Smallest Value
+</div>
+
+<div class="formula">
+Midpoint = (L + U) / 2
+</div>
+
+---
+
+<h2>Sturges Rule</h2>
+
+<p>
+Sturges rule determines the number of class intervals.
+</p>
+
+<div class="formula">
+
+K = 1 + 3.322 log10(n)
+
+</div>
+
+Where:
+
+- n = number of observations  
+- K = number of class intervals  
+
+---
+
+<h2>Class Width</h2>
+
+<div class="formula">
+
+Class Width = Range / Number of Classes
+
+</div>
+
+---
+
+<h2>Steps to Construct Continuous Frequency Distribution</h2>
+
+<ol>
+
+<li>Determine number of class intervals using Sturges rule.</li>
+
+<li>Calculate class width.</li>
+
+<li>Choose starting lower class limit.</li>
+
+<li>Construct class intervals.</li>
+
+<li>Use tally marks to count observations.</li>
+
+<li>Compute frequencies.</li>
+
+</ol>
+
+</p>
+
+</section>
+
+</main>
+
+</div>
+
+<footer>
+
+<p>Statistics Digital Textbook | Chapter 5</p>
+
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chapter 11 - Probability</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    </head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../index.html">Statistics Notes</a>
+            <nav class="top-nav">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+            </nav>
+            <div class="header-actions">
+                <input class="search" placeholder="Search topics" aria-label="Search topics">
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap main-grid chapter-page">
+        <div class="container">
+
+<nav class="sidebar">
+
+<h3>Chapter Contents</h3>
+
+<ul>
+<li><a href="#intro">11.1 Introduction</a></li>
+<li><a href="#definition">Definition</a></li>
+<li><a href="#sets">11.2 Set Theory Basics</a></li>
+<li><a href="#operations">11.3 Operations on Sets</a></li>
+<li><a href="#basic-concepts">11.4 Basic Probability Concepts</a></li>
+<li><a href="#types-events">11.5 Types of Events</a></li>
+<li><a href="#classical">11.6 Classical Probability</a></li>
+<li><a href="#types-prob">11.7 Types of Probability</a></li>
+<li><a href="#permcomb">11.8 Permutation & Combination</a></li>
+<li><a href="#theorems">11.9 Theorems of Probability</a></li>
+<li><a href="#conditional">11.10 Conditional Probability</a></li>
+<li><a href="#keyprops">Key Properties</a></li>
+</ul>
+
+</nav>
+
+<div class="content">
+    <h1 class="chapter-title">Chapter 11 - Probability</h1>
+
+    <h2 id="intro">11.1 Introduction</h2>
+    <p>Probability deals with uncertainty and chance. It measures how likely an event is to occur. Terms like "likely", "chance", and "possibly" are related to probability.</p>
+
+    <h2 id="definition">Definition</h2>
+    <p>Probability is a numerical measure of uncertainty about the occurrence of an event.</p>
+
+    <h2 id="sets">11.2 Set Theory Basics</h2>
+    <p><strong>Set:</strong> Collection of well-defined objects.</p>
+    <ul>
+        <li><strong>Finite Set:</strong> Limited elements (e.g., vowels)</li>
+        <li><strong>Infinite Set:</strong> Unlimited elements</li>
+        <li><strong>Null Set (φ):</strong> No elements</li>
+    </ul>
+
+    <h3>Important Concepts</h3>
+    <ul>
+        <li>Subset: A ⊂ B</li>
+        <li>Equal Sets: A = B</li>
+        <li>Universal Set: S or U</li>
+    </ul>
+
+    <h2 id="operations">11.3 Operations on Sets</h2>
+    <h3>Union</h3>
+    <div class="formula">A ∪ B = elements in A or B</div>
+    <h3>Intersection</h3>
+    <div class="formula">A ∩ B = common elements</div>
+    <h3>Complement</h3>
+    <div class="formula">Ā = elements not in A</div>
+    <h3>Difference</h3>
+    <div class="formula">A - B = elements in A but not in B</div>
+
+    <h2 id="basic-concepts">11.4 Basic Probability Concepts</h2>
+    <ul>
+        <li><strong>Experiment:</strong> Operation with outcomes</li>
+        <li><strong>Random Experiment:</strong> Outcome uncertain</li>
+        <li><strong>Trial:</strong> Single performance</li>
+        <li><strong>Outcome:</strong> Result of experiment</li>
+        <li><strong>Sample Space (S):</strong> All possible outcomes</li>
+        <li><strong>Event:</strong> Subset of sample space</li>
+    </ul>
+
+    <div class="example">
+        <p><strong>Example:</strong></p>
+        <p>Coin toss → S = {H, T}</p>
+        <p>Die → S = {1,2,3,4,5,6}</p>
+    </div>
+
+    <h2 id="types-events">11.5 Types of Events</h2>
+    <ul>
+        <li>Equally Likely Events</li>
+        <li>Mutually Exclusive Events</li>
+        <li>Exhaustive Events</li>
+        <li>Complementary Events</li>
+        <li>Independent & Dependent Events</li>
+    </ul>
+
+    <h2 id="classical">11.6 Classical Probability</h2>
+    <div class="formula">P(A) = Number of favorable outcomes / Total outcomes</div>
+    <ul>
+        <li>0 ≤ P(A) ≤ 1</li>
+        <li>P(A) + P(Ā) = 1</li>
+    </ul>
+
+    <h2 id="types-prob">11.7 Types of Probability</h2>
+    <ul>
+        <li>Classical Probability</li>
+        <li>Empirical Probability</li>
+        <li>Axiomatic Probability</li>
+    </ul>
+
+    <h2 id="permcomb">11.8 Permutation & Combination</h2>
+    <h3>Permutation</h3>
+    <div class="formula">nPr = n! / (n - r)!</div>
+    <h3>Combination</h3>
+    <div class="formula">nCr = n! / [(n - r)! r!]</div>
+
+    <h2 id="theorems">11.9 Theorems of Probability</h2>
+    <h3>Addition Theorem</h3>
+    <div class="formula">P(A ∪ B) = P(A) + P(B) − P(A ∩ B)</div>
+    <h3>Multiplication Theorem</h3>
+    <div class="formula">P(A ∩ B) = P(A) × P(B)  (Independent events)</div>
+    <div class="formula">P(A ∩ B) = P(A) × P(B|A)  (Dependent events)</div>
+
+    <h2 id="conditional">11.10 Conditional Probability</h2>
+    <div class="formula">P(B|A) = P(A ∩ B) / P(A)</div>
+    <div class="formula">P(A|B) = P(A ∩ B) / P(B)</div>
+
+    <h2 id="keyprops">Key Properties</h2>
+    <ul>
+        <li>Probability lies between 0 and 1</li>
+        <li>P(φ) = 0</li>
+        <li>P(S) = 1</li>
+        <li>Total probability = 1</li>
+    </ul>
+
+    </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>© 2026 Statistics Notes</div>
+            <nav>
+                <a href="../index.html#about">About</a>
+            </nav>
+        </div>
+    </footer>
+
+            <nav class="chapter-nav">
+                <div class="nav-inner"><a class="btn" href="measures-of-skewness-and-kurtosis.html">← Previous</a><span class="sep"></span><a class="btn" href="theoretical-probability-distributions.html">Next →</a></div>
+            </nav>
+
+</body>
+</html>
