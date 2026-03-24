@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chapter 10 - Measures of Skewness and Kurtosis</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    </head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../index.html">Statistics Notes</a>
+            <nav class="top-nav">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+            </nav>
+            <div class="header-actions">
+                <input class="search" placeholder="Search topics" aria-label="Search topics">
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap main-grid chapter-page">
+        <div class="container">
+
+<nav class="sidebar">
+
+<div class="content">
+    <h1 class="chapter-title">Chapter 10 - Measures of Skewness and Kurtosis</h1>
+
+<h3>Chapter Contents</h3>
+
+<ul>
+<li><a href="#intro">10.1 Introduction</a></li>
+<li><a href="#definition">10.2 Definition</a></li>
+<li><a href="#symmetry">10.3 Symmetrical Distribution</a></li>
+<li><a href="#asymmetry">10.4 Asymmetrical Distribution</a></li>
+<li><a href="#types-skew">10.5 Types of Skewness</a></li>
+<li><a href="#tests">10.6 Tests of Skewness</a></li>
+<li><a href="#measures-skew">10.7 Measures of Skewness</a></li>
+<li><a href="#moments">10.8 Moments</a></li>
+<li><a href="#kurtosis">10.9 Kurtosis</a></li>
+<li><a href="#measure-kurtosis">10.10 Measure of Kurtosis</a></li>
+<li><a href="#summary">Summary</a></li>
+</ul>
+
+</nav>
+
+
+
+    <h2 id="intro">10.1 Introduction</h2>
+    <p>Measures of central tendency and dispersion are not sufficient to describe the shape of a distribution. Two distributions may have the same mean and standard deviation but differ in shape. Skewness helps identify asymmetry, and kurtosis describes the peakedness of the curve.</p>
+
+    <h2 id="definition">10.2 Definition</h2>
+    <p><strong>Skewness:</strong> Refers to asymmetry in a frequency distribution.</p>
+
+    <h2 id="symmetry">10.3 Symmetrical Distribution</h2>
+    <ul>
+        <li>Bell-shaped curve</li>
+        <li>Mean = Median = Mode</li>
+        <li>Equal spread on both sides</li>
+    </ul>
+
+    <h2 id="asymmetry">10.4 Asymmetrical Distribution</h2>
+    <p>If a distribution is not symmetrical, it is called skewed. Mean, median, and mode differ.</p>
+
+    <h2 id="types-skew">10.5 Types of Skewness</h2>
+
+    <h3>Positive Skewness</h3>
+    <ul>
+        <li>Tail extends to the right</li>
+        <li>Mean &gt; Median &gt; Mode</li>
+    </ul>
+
+    <h3>Negative Skewness</h3>
+    <ul>
+        <li>Tail extends to the left</li>
+        <li>Mean &lt; Median &lt; Mode</li>
+    </ul>
+
+    <h3>Zero Skewness</h3>
+    <ul>
+        <li>Perfect symmetry</li>
+        <li>Mean = Median = Mode</li>
+    </ul>
+
+    <h2 id="tests">10.6 Tests of Skewness</h2>
+    <ul>
+        <li>Mean, Median, Mode are unequal</li>
+        <li>Quartiles are not equidistant</li>
+        <li>Curve is not bell-shaped</li>
+        <li>Unequal deviations</li>
+    </ul>
+
+    <h2 id="measures-skew">10.7 Measures of Skewness</h2>
+    <h3>Karl Pearson’s Method</h3>
+    <div class="formula">Sk = (Mean − Mode) / SD</div>
+    <div class="formula">Sk = 3(Mean − Median) / SD</div>
+    <ul>
+        <li>Range: -1 to +1</li>
+        <li>0 → Symmetrical</li>
+        <li>+ → Positive skew</li>
+        <li>- → Negative skew</li>
+    </ul>
+
+    <h3>Bowley’s Method</h3>
+    <div class="formula">Sk = (Q3 + Q1 − 2Median) / (Q3 − Q1)</div>
+    <ul>
+        <li>Based on quartiles</li>
+        <li>Useful when mode is undefined</li>
+    </ul>
+
+    <h3>Kelly’s Method</h3>
+    <div class="formula">Sk = (P90 + P10 − 2P50) / (P90 − P10)</div>
+
+    <h3>Skewness Based on Moments</h3>
+    <div class="formula">β₁ = μ₃² / μ₂³</div>
+
+    <h2 id="moments">10.8 Moments</h2>
+    <p>Moments are averages of deviations raised to powers.</p>
+    <ul>
+        <li>μ₁ = 0</li>
+        <li>μ₂ = Variance</li>
+        <li>μ₃ = Skewness</li>
+        <li>μ₄ = Kurtosis</li>
+    </ul>
+
+    <h2 id="kurtosis">10.9 Kurtosis</h2>
+    <p>Kurtosis measures the peakedness or flatness of a distribution.</p>
+
+    <h3>Types of Kurtosis</h3>
+    <h4>Leptokurtic</h4>
+    <ul><li>Highly peaked</li></ul>
+    <h4>Mesokurtic</h4>
+    <ul><li>Normal distribution</li></ul>
+    <h4>Platykurtic</h4>
+    <ul><li>Flat curve</li></ul>
+
+    <h2 id="measure-kurtosis">10.10 Measure of Kurtosis</h2>
+    <div class="formula">β₂ = μ₄ / μ₂²</div>
+    <div class="formula">γ₂ = β₂ − 3</div>
+    <ul>
+        <li>β₂ &gt; 3 → Leptokurtic</li>
+        <li>β₂ = 3 → Mesokurtic</li>
+        <li>β₂ &lt; 3 → Platykurtic</li>
+    </ul>
+
+    <div class="highlight">
+        <strong>Summary:</strong>
+        <ul>
+            <li>Skewness → Shape (left/right)</li>
+            <li>Kurtosis → Peak (sharp/flat)</li>
+        </ul>
+    </div>
+
+    </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>© 2026 Statistics Notes</div>
+            <nav>
+                <a href="../index.html#about">About</a>
+            </nav>
+        </div>
+    </footer>
+
+            <nav class="chapter-nav">
+                <div class="nav-inner"><a class="btn" href="measures-of-dispersion.html">← Previous</a><span class="sep"></span><a class="btn" href="theoretical-probability-distributions.html">Next →</a></div>
+            </nav>
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Chapter 12 - Theoretical Probability Distributions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    </head>
+<body>
+    <header class="site-header">
+        <div class="wrap">
+            <a class="brand" href="../index.html">Statistics Notes</a>
+            <nav class="top-nav">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#about">About</a>
+            </nav>
+            <div class="header-actions">
+                <input class="search" placeholder="Search topics" aria-label="Search topics">
+            </div>
+        </div>
+    </header>
+
+    <main class="wrap main-grid chapter-page">
+        <div class="container">
+
+<nav class="sidebar">
+
+  <div class="content">
+    <h1 class="chapter-title">Chapter 12 - Theoretical Probability Distributions</h1>
+    
+<h3>Chapter Contents</h3>
+
+<ul>
+<li><a href="#intro">12.1 Introduction</a></li>
+<li><a href="#rv">12.2 Random Variable</a></li>
+<li><a href="#dist">12.3 Probability Distribution</a></li>
+<li><a href="#discrete">12.4 Discrete Probability Distributions</a></li>
+<li><a href="#bernoulli">Bernoulli</a></li>
+<li><a href="#binomial">Binomial</a></li>
+<li><a href="#poisson">Poisson</a></li>
+<li><a href="#continuous">12.5 Continuous Probability Distributions</a></li>
+<li><a href="#normal">Normal Distribution</a></li>
+<li><a href="#standard-normal">Standard Normal</a></li>
+<li><a href="#applications">Applications</a></li>
+</ul>
+
+</nav>
+
+
+
+    <h2 id="intro">12.1 Introduction</h2>
+    <p>A random variable assigns numerical values to outcomes of a random experiment.</p>
+
+    <h2 id="rv">12.2 Random Variable</h2>
+    <p>A variable whose value depends on outcomes of a random experiment.</p>
+
+    <div class="example">
+        <p><strong>Example:</strong> Two coins → S = {HH, HT, TH, TT}</p>
+        <p>X (number of heads) → {2,1,1,0}</p>
+    </div>
+
+    <h3 id="types">Types</h3>
+    <ul>
+        <li><strong>Discrete Random Variable:</strong> Countable values</li>
+        <li><strong>Continuous Random Variable:</strong> Infinite values within range</li>
+    </ul>
+
+    <h2 id="dist">12.3 Probability Distribution</h2>
+    <p>A distribution that assigns probabilities to all values of a random variable.</p>
+    <div class="formula">P(X = x) ≥ 0</div>
+    <div class="formula">Σ P(X = x) = 1</div>
+    <h3>Types</h3>
+    <ul>
+        <li>Discrete Distribution (PMF)</li>
+        <li>Continuous Distribution (PDF)</li>
+    </ul>
+
+    <h2 id="discrete">12.4 Discrete Probability Distributions</h2>
+    <h3 id="bernoulli">Bernoulli Distribution</h3>
+    <div class="formula">P(X = x) = p^x (1-p)^(1-x), x = 0 or 1</div>
+    <ul>
+        <li>Mean = p</li>
+        <li>Variance = pq</li>
+    </ul>
+
+    <h3 id="binomial">Binomial Distribution</h3>
+    <div class="formula">P(X = x) = nCx p^x q^(n-x)</div>
+    <ul>
+        <li>Mean = np</li>
+        <li>Variance = npq</li>
+        <li>Conditions: Fixed trials, independent, constant probability</li>
+    </ul>
+
+    <h3 id="poisson">Poisson Distribution</h3>
+    <div class="formula">P(X = x) = (e^-λ λ^x) / x!</div>
+    <ul>
+        <li>Mean = λ</li>
+        <li>Variance = λ</li>
+        <li>Used for rare events</li>
+    </ul>
+
+    <h2 id="continuous">12.5 Continuous Probability Distributions</h2>
+    <h3 id="normal">Normal Distribution</h3>
+    <div class="formula">f(x) = (1 / σ√2π) e^(-(x-μ)² / 2σ²)</div>
+    <ul>
+        <li>Mean = Median = Mode</li>
+        <li>Bell-shaped curve</li>
+        <li>Symmetrical distribution</li>
+    </ul>
+
+    <h3 id="properties">Properties</h3>
+    <ul>
+        <li>68.26% data within ±1σ</li>
+        <li>95.44% within ±2σ</li>
+        <li>99.73% within ±3σ</li>
+    </ul>
+
+    <h3 id="standard-normal">Standard Normal Distribution</h3>
+    <div class="formula">Z = (X - μ) / σ</div>
+    <ul>
+        <li>Mean = 0</li>
+        <li>Standard deviation = 1</li>
+    </ul>
+
+    <h2 id="applications">Applications of Normal Distribution</h2>
+    <ul>
+        <li>Central Limit Theorem</li>
+        <li>Statistical inference</li>
+        <li>Quality control</li>
+        <li>Hypothesis testing</li>
+    </ul>
+
+    </div>
+
+    </div>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <div>© 2026 Statistics Notes</div>
+            <nav>
+                <a href="../index.html#about">About</a>
+            </nav>
+        </div>
+    </footer>
+
+            <nav class="chapter-nav">
+                <div class="nav-inner"><a class="btn" href="probability.html">← Previous</a><span class="sep"></span><a class="btn" href="sampling-theory.html">Next →</a></div>
+            </nav>
+
+</body>
+</html>
